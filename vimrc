@@ -1,5 +1,11 @@
 set nocompatible
 
+"""""""""""""
+" Pathogen ""
+"""""""""""""
+call pathogen#infect()
+call pathogen#helptags()
+
 " Active auto filetype detection
 syntax on
 filetype plugin indent on
@@ -26,3 +32,4 @@ set confirm
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
