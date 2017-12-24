@@ -42,3 +42,8 @@ autocmd BufEnter * NERDTreeMirror
 nmap <silent> <C-t> :NERDTreeToggle<CR>
 "Set F2 to put the cursor to the nerdtree
 nmap <silent> <F2> :NERDTreeFind<CR>
+
+"""""""""""""
+" YCM      ""
+"""""""""""""
+let g:ycm_rust_src_path = $(rustc --print sysroot)/src/rust/src
