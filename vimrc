@@ -3,8 +3,7 @@ set nocompatible
 """""""""""""
 " Pathogen ""
 """""""""""""
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " Active auto filetype detection
 syntax on
