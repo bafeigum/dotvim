@@ -35,8 +35,8 @@ set expandtab
 """""""""""""
 " NERDTree ""
 """""""""""""
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
+"autocmd VimEnter * NERDTree
+"autocmd BufEnter * NERDTreeMirror
 
 "CTRL-t to toggle tree view
 nmap <silent> <C-t> :NERDTreeToggle<CR>
@@ -46,4 +46,4 @@ nmap <silent> <F2> :NERDTreeFind<CR>
 """""""""""""
 " YCM      ""
 """""""""""""
-let g:ycm_rust_src_path = $(rustc --print sysroot)/src/rust/src
+let g:ycm_rust_src_path = "$(rustc --print sysroot)/src/rust/src"
