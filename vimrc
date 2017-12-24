@@ -32,3 +32,13 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+"""""""""""""
+" NERDTree ""
+"""""""""""""
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+
+"CTRL-t to toggle tree view
+nmap <silent> <C-t> :NERDTreeToggle<CR>
+"Set F2 to put the cursor to the nerdtree
+nmap <silent> <F2> :NERDTreeFind<CR>
