@@ -1,6 +1,6 @@
 Installation:
     git clone git://github.com/bfeigum/dotvim.git ~/.vim
-
+    
 Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
@@ -12,6 +12,7 @@ Switch to the '~/.vim' directory, and fetch submodules
     git submodule init
     git submodule update
 
+Usage:
 Install a new plugin
     
     cd ~/.vim
