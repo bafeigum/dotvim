@@ -47,3 +47,9 @@ nmap <silent> <F2> :NERDTreeFind<CR>
 " YCM      ""
 """""""""""""
 let g:ycm_rust_src_path = "$(rustc --print sysroot)/src/rust/src"
+
+"""""""""""""""""
+" NumberToggle ""
+"""""""""""""""""
+" Set relativenumber enabled
+set number relativenumber
