@@ -53,6 +53,11 @@ let g:ycm_rust_src_path = "$(rustc --print sysroot)/src/rust/src"
 """"""""""""""
 " Enable rust checking
 let g:syntastic_rust_checkers = ['rustc'] 
+" Recommended settings from Syntastic git page
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 """""""""""""""""
 " NumberToggle ""
