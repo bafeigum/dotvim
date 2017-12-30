@@ -52,7 +52,8 @@ let g:ycm_rust_src_path = "$(rustc --print sysroot)/src/rust/src"
 " syntastic  "
 """"""""""""""
 " Enable rust checking
-let g:syntastic_rust_checkers = ['rustc'] 
+let g:syntastic_rust_checkers = ['cargo'] 
+
 " Recommended settings from Syntastic git page
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
