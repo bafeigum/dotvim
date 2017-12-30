@@ -46,8 +46,10 @@ nmap <silent> <F2> :NERDTreeFind<CR>
 """""""""""""
 " YCM      ""
 """""""""""""
-let g:ycm_rust_src_path = "$(rustc --print sysroot)/src/rust/src"
-
+let g:ycm_rust_src_path = systemlist("rustc --print sysroot")[0] . "/lib/rustlib/src/rust/src"
+noremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+noremap <leader>gf :YcmCompleter GoToDefinition<CR>
+noremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 """"""""""""""
 " syntastic  "
 """"""""""""""

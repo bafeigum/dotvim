@@ -15,7 +15,7 @@ Switch to the '~/.vim' directory, and fetch submodules
 Compile YouCompleteMe
 
     cd ~/.vim/bundle/YouCompleteMe
-    ./install.py
+    ./install.py --rust-completer
     Follow instructions to update
 
 Usage:
