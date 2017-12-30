@@ -48,6 +48,12 @@ nmap <silent> <F2> :NERDTreeFind<CR>
 """""""""""""
 let g:ycm_rust_src_path = "$(rustc --print sysroot)/src/rust/src"
 
+""""""""""""""
+" syntastic  "
+""""""""""""""
+" Enable rust checking
+let g:syntastic_rust_checkers = ['rustc'] 
+
 """""""""""""""""
 " NumberToggle ""
 """""""""""""""""
