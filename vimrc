@@ -62,6 +62,16 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+""""""""""""""
+" ZeaVim     "
+""""""""""""""
+nmap <leader>z <Plug>Zeavim
+vmap <leader>z <Plug>ZVVisSelection
+nmap gz <Plug>ZVMotion
+nmap <leader><leader>z <Plug>ZVKeyDocset
+
+""""""""""""""
+" Enable rust checking
 """""""""""""""""
 " NumberToggle ""
 """""""""""""""""
