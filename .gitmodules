@@ -19,3 +19,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = http://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/zeavim.vim"]
+	path = bundle/zeavim.vim
+	url = https://github.com/KabbAmine/zeavim.vim.git
