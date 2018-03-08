@@ -50,6 +50,16 @@ let g:ycm_rust_src_path = systemlist("rustc --print sysroot")[0] . "/lib/rustlib
 noremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 noremap <leader>gf :YcmCompleter GoToDefinition<CR>
 noremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+"""""""""""""
+" UltiSnips "
+"""""""""""""
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsEditSplit="vertical"
 """"""""""""""
 " syntastic  "
 """"""""""""""
