@@ -55,7 +55,6 @@ noremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 """"""""""""""
 " Enable rust checking
 let g:syntastic_rust_checkers = ['cargo'] 
-
 " Recommended settings from Syntastic git page
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
