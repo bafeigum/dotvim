@@ -70,6 +70,15 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" Build with VHDL2008
+let g:syntastic_vhdl_ghdl_args = "--std=08"
+
+""""""""""""""
+" CTRL-P  "
+""""""""""""""
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
 
 """"""""""""""
 " ZeaVim     "
