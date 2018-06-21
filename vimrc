@@ -32,6 +32,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+colorscheme murphy
 """""""""""""
 " NERDTree ""
 """""""""""""
@@ -71,7 +72,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " Build with VHDL2008
-let g:syntastic_vhdl_ghdl_args = "--std=08"
+let g:syntastic_vhdl_ghdl_args = "--std=08 -P/home/bfeigum/Projects/HDL/common_libs/xilinx-ise/unisim/v08/"
+" Enable syntastic debug
+" let g:syntastic_debug = 3
 
 """"""""""""""
 " CTRL-P  "
