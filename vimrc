@@ -33,15 +33,23 @@ set softtabstop=4
 set expandtab
 
 colorscheme morning
-"""""""""""""
-" NERDTree ""
-"""""""""""""
-"autocmd VimEnter * NERDTree
-"autocmd BufEnter * NERDTreeMirror
-
+"""""""""""""""""""
+" NERDTree settings
+"""""""""""""""""""
 nmap ,n :NERDTreeToggle<CR>
 nmap ,m :NERDTreeFind<CR>
 nmap ,N :NERDTreeClose<CR>
+" Store the bookmarks file
+let NERDTreeBookmarksFile=expand("$HOME/.vim/NERDTreeBookmarks")
+
+let NERDTreeShowBookmarks=1       " Show the bookmarks table on startup
+let NERDTreeShowFiles=1           " Show hidden files, too
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1          " Quit on opening files from the tree
+let NERDTreeHighlightCursorline=1 " Highlight the selected entry in the tree
+let NERDTreeMouseMode=2           " Use a single click to fold/unfold directories
+                                  " and a double click to open files
+let NERDTreeWinSize=60            " Increase window width
 
 """""""""""""
 " YCM      ""
