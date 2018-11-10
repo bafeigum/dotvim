@@ -32,16 +32,16 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+colorscheme morning
 """""""""""""
 " NERDTree ""
 """""""""""""
 "autocmd VimEnter * NERDTree
 "autocmd BufEnter * NERDTreeMirror
 
-"CTRL-t to toggle tree view
-nmap <silent> <C-t> :NERDTreeToggle<CR>
-"Set F2 to put the cursor to the nerdtree
-nmap <silent> <F2> :NERDTreeFind<CR>
+nmap ,n :NERDTreeToggle<CR>
+nmap ,m :NERDTreeFind<CR>
+nmap ,N :NERDTreeClose<CR>
 
 """""""""""""
 " YCM      ""
@@ -72,6 +72,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " Build with VHDL2008
 let g:syntastic_vhdl_ghdl_args = "--std=08"
+" Build with verilator
+let g:syntastic_verilog_compiler = "verilator"
 
 """"""""""""""
 " CTRL-P  "
