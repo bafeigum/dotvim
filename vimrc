@@ -32,6 +32,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+<<<<<<< HEAD
 colorscheme murphy
 """""""""""""
 " NERDTree ""
@@ -43,6 +44,26 @@ colorscheme murphy
 nmap <silent> <C-t> :NERDTreeToggle<CR>
 "Set F2 to put the cursor to the nerdtree
 nmap <silent> <F2> :NERDTreeFind<CR>
+=======
+colorscheme morning
+"""""""""""""""""""
+" NERDTree settings
+"""""""""""""""""""
+nmap ,n :NERDTreeToggle<CR>
+nmap ,m :NERDTreeFind<CR>
+nmap ,N :NERDTreeClose<CR>
+" Store the bookmarks file
+let NERDTreeBookmarksFile=expand("$HOME/.vim/NERDTreeBookmarks")
+
+let NERDTreeShowBookmarks=1       " Show the bookmarks table on startup
+let NERDTreeShowFiles=1           " Show hidden files, too
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1          " Quit on opening files from the tree
+let NERDTreeHighlightCursorline=1 " Highlight the selected entry in the tree
+let NERDTreeMouseMode=2           " Use a single click to fold/unfold directories
+                                  " and a double click to open files
+let NERDTreeWinSize=60            " Increase window width
+>>>>>>> b8e92a5c770c1db955285c6720563eebc5860d1b
 
 """""""""""""
 " YCM      ""
@@ -77,6 +98,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_vhdl_ghdl_args = "--std=08 -P/home/bfeigum/Projects/HDL/common_libs/xilinx-ise/unisim/v08/"
 " Enable syntastic debug
 " let g:syntastic_debug = 3
+" Build with verilator
+let g:syntastic_verilog_compiler = "verilator"
 
 """"""""""""""
 " CTRL-P  "
