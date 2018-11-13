@@ -54,6 +54,8 @@ noremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+" Disable diagnostics ui to enable C language checking with Syntastic
+let g:ycm_show_diagnostics_ui = 0
 """""""""""""
 " UltiSnips "
 """""""""""""
