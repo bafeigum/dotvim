@@ -32,19 +32,6 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-<<<<<<< HEAD
-colorscheme murphy
-"""""""""""""
-" NERDTree ""
-"""""""""""""
-"autocmd VimEnter * NERDTree
-"autocmd BufEnter * NERDTreeMirror
-
-"CTRL-t to toggle tree view
-nmap <silent> <C-t> :NERDTreeToggle<CR>
-"Set F2 to put the cursor to the nerdtree
-nmap <silent> <F2> :NERDTreeFind<CR>
-=======
 colorscheme morning
 """""""""""""""""""
 " NERDTree settings
@@ -63,7 +50,6 @@ let NERDTreeHighlightCursorline=1 " Highlight the selected entry in the tree
 let NERDTreeMouseMode=2           " Use a single click to fold/unfold directories
                                   " and a double click to open files
 let NERDTreeWinSize=60            " Increase window width
->>>>>>> b8e92a5c770c1db955285c6720563eebc5860d1b
 
 """""""""""""
 " YCM      ""
