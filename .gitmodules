@@ -31,6 +31,6 @@
 [submodule "bundle/verilog_systemverilog"]
 	path = bundle/verilog_systemverilog
 	url = http://github.com/vhda/verilog_systemverilog.vim
-[submodule "pack/git-plugins/start/ale"]
-	path = pack/git-plugins/start/ale
+[submodule "bundle/ale"]
+	path = bundle/ale
 	url = http://github.com/dense-analysis/ale.git
