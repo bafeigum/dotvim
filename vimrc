@@ -52,18 +52,6 @@ let NERDTreeMouseMode=2           " Use a single click to fold/unfold directorie
 let NERDTreeWinSize=60            " Increase window width
 
 """""""""""""
-" YCM      ""
-"""""""""""""
-let g:ycm_rust_src_path = systemlist("rustc --print sysroot")[0] . "/lib/rustlib/src/rust/src"
-noremap <leader>gl :YcmCompleter GoToDeclaration<CR>
-noremap <leader>gf :YcmCompleter GoToDefinition<CR>
-noremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-" Disable diagnostics ui to enable C language checking with Syntastic
-let g:ycm_show_diagnostics_ui = 0
-"""""""""""""
 " UltiSnips "
 """""""""""""
 let g:UltiSnipsExpandTrigger="<tab>"
